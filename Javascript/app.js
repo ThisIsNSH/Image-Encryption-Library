@@ -174,7 +174,7 @@ function encryptImg() {
         temp2[j][row][1] = temp1[j][num + i][1];
         temp2[j][row][2] = temp1[j][num + i][2];
       }
-      col++;
+      row++;
     }
   }
   //image1.setimageBitmap(pic1);
