@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enpix</title>
+
+    <script src="require.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="StringBuilder.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <img
+          id="SourceImage"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Brill_windmill_April_2017.jpg/317px-Brill_windmill_April_2017.jpg"
+          crossorigin="Anonymous"
+        />
+      </div>
+      <div class="column">
+        <div class="canvas">
+          <canvas id="Canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <button id="DecryptButton">Decrypt</button>
+    <button id="EncryptButton">Encrypt</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
