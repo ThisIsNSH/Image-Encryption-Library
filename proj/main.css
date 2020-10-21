@@ -1,0 +1,17 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.column {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.column canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
