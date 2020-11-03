@@ -1,0 +1,3 @@
+include ':EnpixView'
+include ':app'
+rootProject.name = "Enpix"
