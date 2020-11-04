@@ -1,0 +1,21 @@
+{
+  "name": "enpix-node",
+  "version": "1.0.0",
+  "description": "Encrypt Images in a new way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "encrypt",
+    "image",
+    "cipher",
+    "security",
+    "secure",
+    "decrypt"
+  ],
+  "author": "Nishant Hada <hadanis.singh@gmail.com",
+  "license": "MIT"
+}
