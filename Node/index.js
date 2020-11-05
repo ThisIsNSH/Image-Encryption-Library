@@ -52,7 +52,17 @@ exports.encrypt = function(image, key, grain, time) {
     }
 
     let col = 0
-    var image1 = [...image]
+    var image1 = Array()
+
+    for (var i = 0; i < 5; i++) {
+        image1[i] = Array()
+    }
+
+    for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 4; j++) {
+            image1[i][j] = Array()
+        }
+    }
 
     set.forEach(function (k) {
         let num = k * grain
@@ -66,8 +76,8 @@ exports.encrypt = function(image, key, grain, time) {
                 image1[j][col][1] = px_green
                 image1[j][col][2] = px_blue
             }
+            col++
         }
-        col++
     });
 
     len1 = base64.length
@@ -128,15 +138,15 @@ exports.encrypt = function(image, key, grain, time) {
                 image[row][j][1] = px_green
                 image[row][j][2] = px_blue
             }
-        }
         row++
+        }
     });
 
     return image
 }
 
 exports.decrypt = function(image, key, grain, time) {
-
+    
     var d = new Date()
     var n = d.getTime()
 
@@ -188,7 +198,17 @@ exports.decrypt = function(image, key, grain, time) {
     }
 
     let row = 0
-    var image1 = [...image]
+    var image1 = Array()
+
+    for (var i = 0; i < 5; i++) {
+        image1[i] = Array()
+    }
+
+    for (var i = 0; i < 5; i++) {
+        for (var j = 0; j < 4; j++) {
+            image1[i][j] = Array()
+        }
+    }
 
     set.forEach(function (k) {
         let num = k * grain
@@ -202,8 +222,8 @@ exports.decrypt = function(image, key, grain, time) {
                 image1[num + i][j][1] = px_green
                 image1[num + i][j][2] = px_blue
             }
+            row++
         }
-        row++
     });
 
     len1 = base64.length
@@ -257,16 +277,16 @@ exports.decrypt = function(image, key, grain, time) {
         let num = k * grain
         for (let i = 0; i < grain; i++) {
             for (let j = 0; j < image.length; j++) {
-                var px_red = image1[j][num + i][0]
-                var px_green = image1[j][num + i][1]
-                var px_blue = image1[j][num + i][2]
+                var px_red = image1[j][col][0]
+                var px_green = image1[j][col][1]
+                var px_blue = image1[j][col][2]
 
-                image[j][col][0] = px_red
-                image[j][col][1] = px_green
-                image[j][col][2] = px_blue
+                image[j][num + i][0] = px_red
+                image[j][num + i][1] = px_green
+                image[j][num + i][2] = px_blue
             }
+            col++
         }
-        col++
     });
 
     return image

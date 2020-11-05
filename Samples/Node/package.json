@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "enpix-node": "^1.0.0"
+    "enpix-node": "^1.0.1"
   }
 }
