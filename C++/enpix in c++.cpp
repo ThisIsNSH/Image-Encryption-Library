@@ -51,11 +51,11 @@ char* base64Encoder(char input_str[], int len_str)
 	return res_str; 
 
 } 
-int temp[5][5][3];
+int temp[5][4][3];
 int* encrypt(int* matrix,char *key1,char *key2,int grain)
 {
 	char key[1000];
-	ll row=5,column=5,isize;
+	ll row=5,column=4,isize;
 	int len_str=0;
 	for(; (*key1)!='\0';len_str++)
 	{
@@ -107,17 +107,17 @@ int* encrypt(int* matrix,char *key1,char *key2,int grain)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s1.count(k)==0)
+		    	if(s1.count(k)>0)
 		    	break;
-		    //	else
-		    //	s1.insert(k);
+		    	else
+		    	s1.insert(k);
 			}
 			else
 			{
 				while(k>=int_max||(k>=0 && (s1.count(k)>0)))
 				k--;
-			//	if(k>=0 && s1.count(k)==0)
-			//	s1.insert(k);
+				if(k>=0 && s1.count(k)==0)
+				s1.insert(k);
 				break;
 			}
 		}
@@ -145,8 +145,8 @@ int* encrypt(int* matrix,char *key1,char *key2,int grain)
                 temp1[k][col][1] = px_green;
                 temp1[k][col][2] = px_blue;
 			}
+			col++;
 		}
-		col++;
 		itr++;
 	}
 	
@@ -181,17 +181,17 @@ int* encrypt(int* matrix,char *key1,char *key2,int grain)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s2.count(k))
+		    	if(s2.count(k)>0)
 		    	break;
-		    	//else
-		    	//s2.insert(k);
+		    	else
+		    	s2.insert(k);
 			}
 			else
 			{
-				while(k>=int_max||(k>=0 && s2.count(k)))
+				while(k>=int_max||(k>=0 && s2.count(k)>0))
 				k--;
-				//if(k>=0 && s2.count(k)==0)
-				//s2.insert(k);
+				if(k>=0 && s2.count(k)==0)
+				s2.insert(k);
 				break;
 			}
 		}
@@ -218,19 +218,19 @@ int* encrypt(int* matrix,char *key1,char *key2,int grain)
 				temp[roww][k][0] = px_red;
                 temp[roww][k][1] = px_green;
                 temp[roww][k][2] = px_blue;
-			}	
+			}
+			roww++;	
 		}
-		roww++;
 		itr1++;
 	}
   	return &temp[0][0][0];
 	
 }
-int pic[5][5][3];
+int pic[5][4][3];
 int* decrypt(int* matrix,char *key1,char *key2,ll grain)
 {
 	char key[1000];
-	ll row=5,column=5,isize;
+	ll row=5,column=4,isize;
 	int len_str=0;
 	for(; (*key1)!='\0';len_str++)
 	{
@@ -266,7 +266,6 @@ int* decrypt(int* matrix,char *key1,char *key2,ll grain)
 		s=s+base64;
 		base64=s.substr(0,row);
 	}
-	
 	set <int, greater <int> > s3 ;
 	set <int, greater <int> > :: iterator itr2; 
 	int int_max=row/grain;
@@ -286,17 +285,17 @@ int* decrypt(int* matrix,char *key1,char *key2,ll grain)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s3.count(k))
+		    	if(s3.count(k)>0)
 		    	break;
-		    	//else
-		    	//s3.insert(k);
+		    	else
+		    	s3.insert(k);
 			}
 			else
 			{
-				while(k>=int_max||(k>=0 && s3.count(k)))
+				while(k>=int_max||(k>=0 && s3.count(k)>0))
 				k--;
-				//if(k>=0 && s3.count(k)==0)
-				//s3.insert(k);
+				if(k>=0 && s3.count(k)==0)
+				s3.insert(k);
 				break;
 			}
 		}
@@ -324,8 +323,8 @@ int* decrypt(int* matrix,char *key1,char *key2,ll grain)
                 pic1[num+j][k][1] = px_green;
                 pic1[num+j][k][2] = px_blue;
 			}
+			roww++;
 		}
-		roww++;
 		itr2++;
 	}
 	
@@ -360,17 +359,17 @@ int* decrypt(int* matrix,char *key1,char *key2,ll grain)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s4.count(k))
+		    	if(s4.count(k)>0)
 		    	break;
-		    	//else
-		    	//s4.insert(k);
+		    	else
+		    	s4.insert(k);
 			}
 			else
 			{
-				while(k>=int_max||(k>=0 && s4.count(k)))
+				while(k>=int_max||(k>=0 && s4.count(k)>0))
 				k--;
-				//if(k>=0 && s4.count(k)==0)
-				//s4.insert(k);
+				if(k>=0 && s4.count(k)==0)
+				s4.insert(k);
 				break;
 			}
 		}
@@ -398,8 +397,8 @@ int* decrypt(int* matrix,char *key1,char *key2,ll grain)
                 pic[k][col][1] = px_green;
                 pic[k][col][2] = px_blue;
 			}
+				col++;
 		}
-		col++;
 		itr3++;
 	}
   	return &pic[0][0][0];
