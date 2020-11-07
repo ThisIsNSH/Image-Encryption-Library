@@ -11,15 +11,15 @@ int main()
   						{ { 22, 128, 20 },{ 143, 38, 215 },{ 68, 156, 104 },{ 161, 51, 154 } },
   						{ { 150, 81, 140 }, { 78, 126, 130 },{ 253, 34, 9 },{ 56, 66, 135 } },
   						{ { 191, 137, 175 },{ 118, 143, 221 },{ 13, 121, 212 },{ 95, 103, 35 } } };			   
-	int grain;
-	char key1[1000],key2[1000];
-	cout<<"Enter Grain Size";
-	cin>>grain;
-	cout<<"Enter key1 and key2"<<"\n";
-	cin>>key1;
-	cin>>key2;
-	int *image1=encrypt(&matrix[0][0][0],key1,key2,grain);
-	int *image2=decrypt(image1,key1,key2,grain);
+	int grain=1;
+	int size[3]={5,4,3};
+	char key1[1000]="FirstnameLastnameEmailID@Something.com";
+	time_t current_time;
+	current_time  = time(NULL);
+	//ll current_time=100000;
+	int *image1=encrypt(&matrix[0][0][0],key1,current_time,grain,size);
+	int *prn=image1;
+	cout<<"Encrypted Matrix"<<"\n";
 	for(int x=0;x<5;x++)
 	{
 		for ( int i = 0; i < 4; i++ )
@@ -33,6 +33,9 @@ int main()
 		}
     }
     cout<<"\n";
+    
+	int *image2=decrypt(prn,key1,current_time,grain,size);
+    cout<<"Decrypted Matrix"<<"\n";
     for(int x=0;x<5;x++)
 	{
 		for ( int i = 0; i < 4; i++ )
