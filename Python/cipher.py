@@ -2,7 +2,7 @@ import numpy as np
 from Crypto.Cipher import AES
 import base64
 
-def encrypt(grain, image, key):
+def encrypt(grain, image, key, time):
 
     # row X column X 3
 
@@ -29,8 +29,13 @@ def encrypt(grain, image, key):
     hash_set = {}
     int_max = temp.shape[1] / grain
 
-    ch = [for x in [ord(c) for c in base64].join("")]
-
+    ch=[]
+    b="" 
+    for i in base64:
+        b=b+str(ord(i))
+    chl=list(b)
+    for i in chl:
+        ch.append(int(i))
     for i in range(0,ch.len()):
         sb1 = ""
         for j in range(i,ch.len()):
@@ -42,9 +47,9 @@ def encrypt(grain, image, key):
                 else:
                     hash_set.add(k)
             else:
-                while (k >= int_max OR (k >= 0 AND (k in hash_set)):
+                while (k >= int_max or (k >= 0 and (k in hash_set))):
                     k -= 1
-                if (k>=0 AND k not in hash_set) :
+                if (k>=0 and k not in hash_set) :
                     hash_set.add(k)
                 break
 
@@ -85,7 +90,13 @@ def encrypt(grain, image, key):
     hash_set = {}
     int_max = temp.shape[0] / grain
 
-    ch = [for x in [ord(c) for c in base64].join("")]
+    ch=[]
+    b="" 
+    for i in base64:
+        b=b+str(ord(i))
+    chl=list(b)
+    for i in chl:
+        ch.append(int(i))
 
     for i in range(0,ch.len()):
         sb1 = ""
@@ -98,9 +109,9 @@ def encrypt(grain, image, key):
                 else:
                     hash_set.add(k)
             else:
-                while (k >= int_max OR (k >= 0 AND (k in hash_set)):
+                while (k >= int_max or (k >= 0 and (k in hash_set))):
                     k -= 1
-                if (k>=0 AND k not in hash_set) :
+                if (k>=0 and k not in hash_set) :
                     hash_set.add(k)
                 break
 
@@ -128,7 +139,7 @@ def encrypt(grain, image, key):
 
     return pic1
 
-def decrypt(grain, image, key):
+def decrypt(grain, image, key,time):
 
     # row X column X 3
 
@@ -154,7 +165,13 @@ def decrypt(grain, image, key):
     hash_set = {}
     int_max = temp.shape[0] / grain
 
-    ch = [for x in [ord(c) for c in base64].join("")]
+    ch=[]
+    b="" 
+    for i in base64:
+        b=b+str(ord(i))
+    chl=list(b)
+    for i in chl:
+        ch.append(int(i))
 
     for i in range(0,ch.len()):
         sb1 = ""
@@ -167,9 +184,9 @@ def decrypt(grain, image, key):
                 else:
                     hash_set.add(k)
             else:
-                while (k >= int_max OR (k >= 0 AND (k in hash_set)):
+                while (k >= int_max or (k >= 0 and (k in hash_set))):
                     k -= 1
-                if (k>=0 AND k not in hash_set) :
+                if (k>=0 and k not in hash_set) :
                     hash_set.add(k)
                 break
 
@@ -212,7 +229,13 @@ def decrypt(grain, image, key):
     hash_set = {}
     int_max = temp.shape[1] / grain
 
-    ch = [for x in [ord(c) for c in base64].join("")]
+    ch=[]
+    b="" 
+    for i in base64:
+        b=b+str(ord(i))
+    chl=list(b)
+    for i in chl:
+        ch.append(int(i)) 
 
     for i in range(0,ch.len()):
         sb1 = ""
@@ -225,9 +248,9 @@ def decrypt(grain, image, key):
                 else:
                     hash_set.add(k)
             else:
-                while (k >= int_max OR (k >= 0 AND (k in hash_set)):
+                while (k >= int_max or (k >= 0 and (k in hash_set))):
                     k -= 1
-                if (k>=0 AND k not in hash_set) :
+                if (k>=0 and k not in hash_set) :
                     hash_set.add(k)
                 break
 
