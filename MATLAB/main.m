@@ -1,1 +1,9 @@
-// This MATLAB file will contain sample implementation of the cipher
+A(:,:,1)=[196 99 128 80;215 99 196 24;22 143 68 161;150 78 253 56;191 118 13 95]
+A(:,:,2)=[232 253 135 144;44 209 128 43;128 38 156 51;81 126 34 66;137 143 121 103]
+A(:,:,3)=[84 238 2 145; 211 251 255 168;20 215 104 154;140 130 9 135;175 221 212 35] 
+B=A;
+grain=1;
+key='FirstnameLastnameEmailID@Something.com';
+time=100000;
+enpic=encrypt(grain, A, key);
+depic=decrypt(grain, enpic, key);
