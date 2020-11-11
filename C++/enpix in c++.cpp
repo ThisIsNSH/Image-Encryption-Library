@@ -120,17 +120,16 @@ int* encrypt(int* matrix,char *key1,ll key2,int grain,int *size)
 		for(int j=i;j<count;j++)
 		{
 			sb1<<ch[j];
-		    int k;
-		    sb1>>k;
+			int k;
+			sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s1.count(k)>0)
-		    	break;
-		    	else
+		    	if(s1.count(k)==0)
 		    	{
 		    	s1.insert(k);
 		    	array[index]=k;
 		    	index++;
+		    	break;
 			}}
 			else
 			{
@@ -158,7 +157,7 @@ int* encrypt(int* matrix,char *key1,ll key2,int grain,int *size)
 		}
 		s1.insert(i);
 	}
-	
+
 	int col=0;
 	itr=s1.begin();
 	for(int i=0;i<index;i++)
@@ -229,13 +228,12 @@ int* encrypt(int* matrix,char *key1,ll key2,int grain,int *size)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s2.count(k)>0)
-		    	break;
-		    	else
+		    	if(s2.count(k)==0)
 		    	{
 				array1[index]=k;
 		    	index++;
 		    	s2.insert(k);
+		    	break;
 		    }
 			}
 			else
@@ -367,13 +365,12 @@ int* decrypt(int* matrix,char *key1,ll key2,ll grain,int *size)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s3.count(k)>0)
-		    	break;
-		    	else
-		    	{
+		    	if(s3.count(k)==0)
+		        {
 		    	s3.insert(k);
 				array[index]=k;
 		    	index++;
+		    	break;
 		    }
 			}
 			else
@@ -401,7 +398,6 @@ int* decrypt(int* matrix,char *key1,ll key2,ll grain,int *size)
 	}
 		s3.insert(i);
 	}
-
 	int roww=0;
 	itr2=s3.begin();
 	for(int i=0;i<index;i++)
@@ -473,9 +469,7 @@ int* decrypt(int* matrix,char *key1,ll key2,ll grain,int *size)
 		    sb1>>k;
 		    if(k<int_max)
 		    {
-		    	if(s4.count(k)>0)
-		    	break;
-		    	else
+		    	if(s4.count(k)==0)
 		    	{
 				array1[index]=k;
 		    	index++;

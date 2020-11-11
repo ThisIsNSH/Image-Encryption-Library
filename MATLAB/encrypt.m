@@ -23,8 +23,8 @@ function pic = encrypt(grain, image, key)
               base64=s(1:len2);
           end
       
-          hash_set = java.util.HashSet;
           int_max = size(temp,2) / grain;
+          hash_set = java.util.HashSet(int_max);
           s=""
          for i=1:strlength(base64)
              s=s+double(base64(i));
@@ -45,10 +45,10 @@ function pic = encrypt(grain, image, key)
                           break;
                       end
                   else
-                      while (k >= int_max || (k >= 1 && (hash_set.contains(k))))
+                      while (k >= int_max || (k >= 0 && (hash_set.contains(k))))
                           k = k-1;
                       end
-                      if (k>=1 && ~ hash_set.contains(k))
+                      if (k>=0 && ~ hash_set.contains(k))
                           hash_set.add(k);
                           arr(index)=k;
                           index=index+1;
@@ -101,9 +101,9 @@ function pic = encrypt(grain, image, key)
               end
               base64 = s(1:len2);
           end
-
-          hash_set = java.util.HashSet;
+          
           int_max = size(temp,1) / grain;
+          hash_set = java.util.HashSet(int_max);
           
          s=""
          for i=1:strlength(base64)
@@ -125,10 +125,10 @@ function pic = encrypt(grain, image, key)
                           break;
                       end
                   else
-                      while (k >= int_max || (k >= 1 && (hash_set.contains(k))))
+                      while (k >= int_max || (k >= 0 && (hash_set.contains(k))))
                           k = k-1;
                       end
-                      if (k>=1 && ~ hash_set.contains(k))
+                      if (k>=0 && ~ hash_set.contains(k))
                           hash_set.add(k);
                           arr(index)=k;
                           index=index+1;
