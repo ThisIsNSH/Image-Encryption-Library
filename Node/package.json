@@ -17,5 +17,8 @@
     "decrypt"
   ],
   "author": "Nishant Hada <hadanis.singh@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "^1.0.1"
+  }
 }
