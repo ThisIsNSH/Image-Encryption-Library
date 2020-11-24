@@ -8,12 +8,9 @@ import android.widget.EditText;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.nsh.enpixview.EnpixView;
-
-
 public class MainActivity extends AppCompatActivity {
 
-    private EnpixView image1;
+    private Enpix image1;
     private EditText grain;
 
     String key = "FirstnameLastnameEmailID@Something.com";

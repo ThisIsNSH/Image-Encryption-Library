@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="enpix", 
-    version="1.0.2",
+    version="1.0.4",
     author="Nishant Hada",
     author_email="hadanis.singh@gmail.com",
     description="Strongest Image Encryption",
