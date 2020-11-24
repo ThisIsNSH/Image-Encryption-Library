@@ -1,57 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-        <EditText
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/grain"
-            android:text="10"
-            android:layout_margin="16dp"
-            android:textColor="@color/colorPrimary"
-            android:hint="Grain Size"/>
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="0dp"
+            <EditText
+                android:id="@+id/grain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Grain Size"
+                android:text="10"
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Encrypt"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Decrypt"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <com.nsh.enpixview.EnpixView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="Encrypt"
-            android:textColor="#fff" />
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic3" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
+        <com.nsh.enpixview.EnpixView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="Decrypt"
-            android:textColor="#fff" />
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pic3" />
 
     </LinearLayout>
-
-    <com.nsh.enpixview.EnpixView
-        android:id="@+id/image1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:layout_weight="1"
-        android:scaleType="centerCrop"
-        android:src="@drawable/pic3" />
-
-</LinearLayout>
+</ScrollView>

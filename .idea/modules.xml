@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Enpix.iml" filepath="$PROJECT_DIR$/.idea/modules/Enpix.iml" group="Enpix" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EnpixView/EnpixView.iml" filepath="$PROJECT_DIR$/.idea/modules/EnpixView/EnpixView.iml" group="Enpix/EnpixView" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Enpix/app" />
+    </modules>
+  </component>
+</project>
