@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/grain"
+            android:visibility="gone"
             android:text="10"
             android:layout_margin="16dp"
             android:textColor="@color/colorPrimary"
@@ -22,6 +23,7 @@
 
         <Button
             android:id="@+id/button1"
+            android:layout_marginLeft="16dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

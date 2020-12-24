@@ -12,8 +12,11 @@ for (var i = 0; i < 341; i++) {
     }
 }
 
-var encrypt = enpix.encrypt(im, "firstname.lastname@email.com-nameofuser-mobilenumber", 1000000)
-var decrypt = enpix.decrypt(encrypt, "firstname.lastname@email.com-nameofuser-mobilenumber", 1000000)
+var key = "firstname.lastname@email.com-nameofuser-mobilenumber"
+var duration = 1000000
+
+var encrypt = enpix.encrypt(im, key, duration)
+var decrypt = enpix.decrypt(encrypt, key, duration)
 
 console.log(decrypt==im)
 

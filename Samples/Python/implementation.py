@@ -1,11 +1,10 @@
 import enpix
 import numpy as np
 
-matrix = np.random.rand(341,763,3)
+matrix = np.random.rand(341,765,3)
 # print(matrix)
 
 key="firstname.lastname@email.com-nameofuser-mobilenumber"
-
 time=1000000
 
 pic = enpix.encrypt(matrix,key,time)
