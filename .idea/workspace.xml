@@ -10,18 +10,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb03276c-d507-4f1a-903f-315e3d6207b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/EnpixView/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/EnpixView/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnpixView/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnpixView/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle_____________Library_Android_sdk_build_tools_29_0_3_renderscript_lib_androidx_rs_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EnpixView/src/main/rs/column_shuffle.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EnpixView/src/main/rs/reverse_column_shuffle.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EnpixView/src/main/rs/reverse_row_shuffle.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EnpixView/src/main/rs/row_shuffle.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/EnpixView/EnpixView.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/EnpixView/EnpixView.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnpixView/src/main/java/com/nsh/enpixview/EnpixView.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnpixView/src/main/java/com/nsh/enpixview/EnpixView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/nsh/enpix/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/nsh/enpix/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="6565ca369904" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_R" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -44,12 +69,20 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="6565ca369904" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-03T10:52:18.692Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EnpixView/src/main/rs" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EnpixView/src/main/rs" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -125,21 +158,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="500" key="GridCell.Tab.0.bottom" timestamp="1606210019578">
+    <state x="308" y="194" key="AndroidCreateResourceDirectoryDialog" timestamp="1617386666840">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="500" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1606210019578" />
-    <state width="1398" height="500" key="GridCell.Tab.0.center" timestamp="1606210019576">
+    <state x="308" y="194" key="AndroidCreateResourceDirectoryDialog/0.23.1440.819@0.23.1440.819" timestamp="1617386666840" />
+    <state width="1398" height="353" key="GridCell.Tab.0.bottom" timestamp="1618567438217">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="500" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1606210019576" />
-    <state width="1398" height="500" key="GridCell.Tab.0.left" timestamp="1606210019575">
+    <state width="1398" height="353" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1618567438217" />
+    <state width="1398" height="353" key="GridCell.Tab.0.center" timestamp="1618567438216">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="500" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1606210019575" />
-    <state width="1398" height="500" key="GridCell.Tab.0.right" timestamp="1606210019577">
+    <state width="1398" height="353" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1618567438216" />
+    <state width="1398" height="353" key="GridCell.Tab.0.left" timestamp="1618567438215">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="500" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1606210019577" />
+    <state width="1398" height="353" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1618567438215" />
+    <state width="1398" height="353" key="GridCell.Tab.0.right" timestamp="1618567438216">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state width="1398" height="353" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1618567438216" />
+    <state x="221" y="71" key="SettingsEditor" timestamp="1617557192551">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="221" y="71" key="SettingsEditor/0.23.1440.819@0.23.1440.819" timestamp="1617557192551" />
+    <state x="390" y="189" width="660" height="486" key="find.popup" timestamp="1617387362357">
+      <screen x="0" y="23" width="1440" height="819" />
+    </state>
+    <state x="390" y="189" width="660" height="486" key="find.popup/0.23.1440.819@0.23.1440.819" timestamp="1617387362357" />
   </component>
 </project>

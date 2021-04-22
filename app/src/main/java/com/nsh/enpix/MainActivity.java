@@ -28,9 +28,11 @@ public class MainActivity extends AppCompatActivity {
         image2 = findViewById(R.id.image2);
 
         try {
-            Bitmap im = image1.getEncryptImage(BitmapFactory.decodeResource(this.getResources(), R.drawable.pic3), key, 100000);
+            long time = System.currentTimeMillis();
+            Bitmap im = image1.getEncryptImage(this, BitmapFactory.decodeResource(this.getResources(), R.drawable.pic3), key, 10000000);
             image1.setImageBitmap(im);
-            image2.decryptImage(im, "firstname.lastname@email.co-nameofuser-mobilenumber", 100000);
+            image2.decryptImage(this, im, key, 10000000);
+            System.out.println(System.currentTimeMillis() - time);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
@@ -40,3 +42,5 @@ public class MainActivity extends AppCompatActivity {
 
 }
 
+//7141
+//17449

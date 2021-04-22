@@ -10,6 +10,7 @@
         tools:context=".MainActivity">
 
         <LinearLayout
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -48,6 +49,7 @@
 
         <com.nsh.enpixview.EnpixView
             android:id="@+id/image1"
+            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
