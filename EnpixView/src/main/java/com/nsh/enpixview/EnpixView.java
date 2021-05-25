@@ -78,7 +78,7 @@ public class EnpixView extends androidx.appcompat.widget.AppCompatImageView {
 
         // key generation
         String sha_key = getSHA(key + duration).toUpperCase();
-        System.out.println(sha_key);
+//        System.out.println(sha_key);
 
         int len1 = (temp.getWidth() / 16) * 16;
         int[] column_key = new int[temp.getWidth()];
@@ -148,7 +148,7 @@ public class EnpixView extends androidx.appcompat.widget.AppCompatImageView {
 
         // key generation
         sha_key = getSHA(key + duration).toUpperCase();
-        System.out.println(sha_key);
+//        System.out.println(sha_key);
 
         len1 = (temp.getHeight() / 16) * 16;
         int[] row_key = new int[temp.getHeight()];
@@ -239,7 +239,7 @@ public class EnpixView extends androidx.appcompat.widget.AppCompatImageView {
 
         // key generation
         String sha_key = getSHA(key + duration).toUpperCase();
-        System.out.println(sha_key);
+//        System.out.println(sha_key);
 
         int len1 = (pic1.getHeight() / 16) * 16;
         int[] row_key = new int[pic1.getHeight()];
@@ -310,7 +310,7 @@ public class EnpixView extends androidx.appcompat.widget.AppCompatImageView {
 
         // key generation
         sha_key = getSHA(key + duration).toUpperCase();
-        System.out.println(sha_key);
+//        System.out.println(sha_key);
 
         len1 = (pic1.getWidth() / 16) * 16;
         int[] column_key = new int[pic1.getWidth()];
@@ -404,10 +404,10 @@ public class EnpixView extends androidx.appcompat.widget.AppCompatImageView {
         int index = 0;
         for (int y = 0; y < bitmap.getHeight(); ++y) {
             for (int x = 0; x < bitmap.getWidth(); ++x) {
-                System.out.println(bitmap.getPixel(x, y));
-                System.out.println(Color.red(bitmap.getPixel(x, y)));
-                System.out.println(Color.green(bitmap.getPixel(x, y)));
-                System.out.println(Color.blue(bitmap.getPixel(x, y)));
+//                System.out.println(bitmap.getPixel(x, y));
+//                System.out.println(Color.red(bitmap.getPixel(x, y)));
+//                System.out.println(Color.green(bitmap.getPixel(x, y)));
+//                System.out.println(Color.blue(bitmap.getPixel(x, y)));
                 coverImageIntArray1D[index++] = bitmap.getPixel(x, y);
             }
         }

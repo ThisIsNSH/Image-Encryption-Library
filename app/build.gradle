@@ -32,7 +32,8 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(':EnpixView')
-//    implementation 'com.github.ThisIsNSH:Enpix:v1.2'
+//    implementation 'com.github.ThisIsNSH:Image-Encryption-Library:v1.2'
+//    implementation 'com.github.ThisIsNSH:Image-Encryption-Library:v2.1'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.12'

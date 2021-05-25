@@ -10,7 +10,6 @@
         tools:context=".MainActivity">
 
         <LinearLayout
-            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -21,6 +20,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:hint="Grain Size"
+                android:visibility="gone"
                 android:text="10"
                 android:textColor="@color/colorPrimary" />
 
@@ -29,6 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/colorPrimary"
@@ -64,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
+            android:visibility="gone"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
             android:adjustViewBounds="true"
